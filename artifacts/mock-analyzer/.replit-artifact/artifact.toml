@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "SSC English Mock Analyzer"
+description = "A focused SSC CGL English sectional mock analysis dashboard that imports mock attempts, identifies topic strengths and weaknesses, tracks progress over time, and creates a practical revision plan."
+version = "1.0.0"
+id = "artifacts/mock-analyzer"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26119
+
+[services.development]
+run = "pnpm --filter @workspace/mock-analyzer run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mock-analyzer", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/mock-analyzer/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26119"
+BASE_PATH = "/"

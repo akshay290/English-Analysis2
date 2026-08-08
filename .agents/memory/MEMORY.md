@@ -1,0 +1,2 @@
+- [Local-first deployment](local-first-deployment.md) — Mock history is browser-local with JSON/CSV portability so the analyzer can deploy as a static Vercel site without secrets or a database.
+- [Topic analytics integrity](topic-analytics-integrity.md) — Only topic rows with real attempts can influence strength, weakness, or revision recommendations.

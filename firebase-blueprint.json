@@ -1,0 +1,35 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "User account profile.",
+      "type": "document",
+      "owner": "user",
+      "fields": {
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "createdAt": { "type": "string" }
+      }
+    },
+    "mocks": {
+      "title": "Mock Attempt Record",
+      "description": "SSC CGL English sectional mock test performance data.",
+      "type": "document",
+      "owner": "user",
+      "fields": {
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "date": { "type": "string" },
+        "score": { "type": "number" },
+        "correct": { "type": "number" },
+        "wrong": { "type": "number" },
+        "unattempted": { "type": "number" },
+        "accuracy": { "type": "number" },
+        "time": { "type": "number" },
+        "topics": { "type": "array" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}

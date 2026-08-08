@@ -1,0 +1,12 @@
+{
+  "buildCommand": "PORT=4173 BASE_PATH=/ pnpm --filter @workspace/mock-analyzer run build",
+  "outputDirectory": "artifacts/mock-analyzer/dist/public",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
