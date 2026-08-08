@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace=@workspace/mock-analyzer",
-    "build": "BASE_PATH=\"${BASE_PATH:-/}\" npm run build --workspaces --if-present",
+    "build": "BASE_PATH=\"${BASE_PATH:-/}\" npm run build --workspaces --if-present && mkdir -p dist && cp -r artifacts/mock-analyzer/dist/public/* dist/",
     "typecheck:libs": "tsc --build",
     "typecheck": "npm run typecheck:libs"
   },

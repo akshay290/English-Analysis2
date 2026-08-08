@@ -1,0 +1,8 @@
+{
+  "name": "SSC CGL English Mock Analyzer",
+  "description": "Comprehensive mock test score tracking, performance analytics, topic weakness diagnosis, and revision planner for SSC CGL English.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
